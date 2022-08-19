@@ -16,7 +16,7 @@
   background-color: darkturquoise;
   outline: none;
 }
-#btn:hover {
+.btn:hover {
   background-color: rgb(106, 163, 157);
 }
 td {
@@ -30,6 +30,9 @@ td {
   height: 70px;
   width: 70px;
   border-radius: 1em;
+}
+#clearBtn:hover {
+  background-color: rgb(106, 163, 157);
 }
 .displayBox {
   width: 70%;
