@@ -11,9 +11,11 @@
     <div class="calculator">
       <div class="flexWrapper">
         <tr class="flex">
-          <td><input class="displayBox" type="text" disabled /></td>
           <td>
-            <button type="button" id="clearBtn" onclick="clear()">C</button>
+            <input class="displayBox" type="text" id="displayBx" disabled />
+          </td>
+          <td>
+            <button type="button" id="clearBtn">C</button>
           </td>
         </tr>
       </div>
@@ -21,23 +23,14 @@
         <table>
           <tr class="row2">
             <td>
-              <button class="btn" type="button" onclick="display('1')">
-                1
-              </button>
+              <button class="btn btn1" type="button" value="1">1</button>
+            </td>
+            <td>
+              <button class="btn btn2" value="2" type="button">2</button>
             </td>
             <td>
               <button
-                class="btn"
-                value="2"
-                type="button"
-                onclick="display('2')"
-              >
-                2
-              </button>
-            </td>
-            <td>
-              <button
-                class="btn"
+                class="btn btn3"
                 value="3"
                 type="button"
                 onclick="display('3')"
@@ -47,7 +40,7 @@
             </td>
             <td>
               <button
-                class="btn"
+                class="btn btnadd"
                 value="+"
                 type="button"
                 onclick="display('+')"
@@ -61,7 +54,7 @@
               <button
                 value="4"
                 type="button"
-                class="btn"
+                class="btn btn4"
                 onclick="display('4')"
               >
                 4
@@ -70,7 +63,7 @@
             <td>
               <button
                 value="5"
-                class="btn"
+                class="btn btn5"
                 type="button"
                 onclick="display('5')"
               >
@@ -80,7 +73,7 @@
             <td>
               <button
                 value="6"
-                class="btn"
+                class="btn btn6"
                 type="button"
                 onclick="display('6')"
               >
@@ -90,7 +83,7 @@
             <td>
               <button
                 value="-"
-                class="btn"
+                class="btn btnSubtract"
                 type="button"
                 onclick="display('-')"
               >
@@ -101,7 +94,7 @@
           <tr class="row4">
             <td>
               <button
-                class="btn"
+                class="btn btn7"
                 value="7"
                 type="button"
                 onclick="display('7')"
@@ -111,7 +104,7 @@
             </td>
             <td>
               <button
-                class="btn"
+                class="btn btn8"
                 value="8"
                 type="button"
                 onclick="display('8')"
@@ -121,7 +114,7 @@
             </td>
             <td>
               <button
-                class="btn"
+                class="btn btn9"
                 value="9"
                 type="button"
                 onclick="display('9')"
@@ -131,7 +124,7 @@
             </td>
             <td>
               <button
-                class="btn"
+                class="btn btnDiv"
                 value="/"
                 type="button"
                 onclick="display('/')"
@@ -143,7 +136,7 @@
           <tr class="row5">
             <td>
               <button
-                class="btn"
+                class="btn btn0"
                 type="button"
                 value="0"
                 onclick="display('0')"
@@ -153,7 +146,7 @@
             </td>
             <td>
               <button
-                class="btn"
+                class="btn btnPoint"
                 type="button"
                 value="."
                 onclick="display('.')"
@@ -163,7 +156,7 @@
             </td>
             <td>
               <button
-                class="btn"
+                class="btn btnMulti"
                 type="button"
                 value="X"
                 onclick="display('*')"
@@ -173,10 +166,10 @@
             </td>
             <td>
               <button
-                class="btn"
+                class="btn btnEqual"
                 type="button"
                 value="="
-                onclick="dispalyResult('=')"
+                onclick="displayResult('=')"
               >
                 =
               </button>
@@ -185,5 +178,6 @@
         </table>
       </tr>
     </div>
+    <script src="calculator.js"></script>
   </body>
 </html>
